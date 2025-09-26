@@ -22,8 +22,129 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   datavault:
+    dds:
+      +schema: dds
+      materialized: incremental
+      +pre-hook:
+        - "{{ lock_relation() }}"
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO dds_ro"
+      +persist_docs:
+        relation: true
+        columns: true
+    dds_private:
+      +schema: dds_private
+      materialized: incremental
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO dds_private_ro"
+      +persist_docs:
+        relation: true
+        columns: true
+    stage:
+      +schema: dds_private
+      materialized: table
+    pa_core_provider:
+      +schema: pa_core_provider
+      +tags: pa_core_provider
+      materialized: table
+      partition_period: day
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO pa_core_provider_ro, dm_ro"
+      +persist_docs:
+        relation: true
+        columns: true
+    dm:
+      +schema: dm
+      +tags: dm
+      materialized: table
+      partition_period: month
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO dm_ro"
+      +persist_docs:
+        relation: true
+        columns: true
+    dm_private:
+      +schema: dm_private
+      +tags: dm_private
+      materialized: table
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO dm_private_ro"
+      +persist_docs:
+        relation: true
+        columns: true
+    dict:
+      +schema: dict
+      +tags: dict
+      materialized: table
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO dict_ro, dm_ro"
+      +persist_docs:
+        relation: true
+        columns: true
     sandbox:
       +schema: sandbox
+      +tags: sandbox
+      materialized: table
+      partition_period: month
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO sandbox_ro"
+      +persist_docs:
+        relation: true
+        columns: true
+    dm_batch:
+      +schema: dm_batch
+      +tags: dm_batch
+      materialized: table
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO dm_batch_ro"
+      +persist_docs:
+        relation: true
+        columns: true
+    dq_result:
+      +schema: dq_result
+      materialized: incremental
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO dm_ro"
+    tech:
+      +schema: tech
+      +tags: tech
+      materialized: table
+      +persist_docs:
+        relation: true
+        columns: true
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO tech_ro, dm_ro"
+    odm:
+      +schema: odm
+      +tags: odm
+      materialized: table
+      partition_period: month
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO odm_ro, dm_ro"
+      +persist_docs:
+        relation: true
+        columns: true
+    exp:
+      +schema: exp
+      +tags: exp
+      materialized: table
+      +persist_docs:
+        relation: true
+        columns: true
+    bi:
+      +schema: bi
+      +tags: bi
+      materialized: table
+      partition_period: month
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO bi_ro, bi_rw"
+      +persist_docs:
+        relation: true
+        columns: true
+    stgext:
+      +schema: stg
+      +tags: stg
+      materialized: table
       +persist_docs:
         relation: true
         columns: true
