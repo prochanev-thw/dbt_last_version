@@ -1,0 +1,29 @@
+name: 'datavault'
+version: '1.0.0'
+config-version: 2
+
+vars:
+  process_code: '19000101'
+  dm_date: '2023-01-01'
+  date_value: '2023-01-01'
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'gp'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+target-path: "target"  # directory which will store compiled SQL files
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+models:
+  datavault:
+    sandbox:
+      +schema: sandbox
+      +persist_docs:
+        relation: true
+        columns: true

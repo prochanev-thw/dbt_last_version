@@ -1,0 +1,5 @@
+dbt-core==1.10.11
+dbt-postgres==1.9.1
+dbt-greenplum @ git+https://github.com/prochanev-thw/dbt-greenplum.git@develop
+hologram==0.0.16
+python-dateutil==2.8.2

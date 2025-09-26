@@ -1,0 +1,131 @@
+
+
+============================== 10:39:16.771466 | 468112b8-e836-47a3-b148-e23871ff2904 ==============================
+[0m10:39:16.771466 [info ] [MainThread]: Running with dbt=1.5.11
+[0m10:39:16.774717 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/prochan_ev/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'False'}
+[0m10:39:16.775030 [info ] [MainThread]: dbt version: 1.5.11
+[0m10:39:16.775186 [info ] [MainThread]: python version: 3.12.3
+[0m10:39:16.775326 [info ] [MainThread]: python path: /Users/prochan_ev/magnit_projects/dbt_last_version/.venv/bin/python
+[0m10:39:16.775462 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit
+[0m10:39:16.775592 [info ] [MainThread]: Using profiles.yml file at /Users/prochan_ev/.dbt/profiles.yml
+[0m10:39:16.775718 [info ] [MainThread]: Using dbt_project.yml file at /Users/prochan_ev/magnit_projects/dbt_last_version/dbt_project.yml
+[0m10:39:16.775836 [info ] [MainThread]: Configuration:
+[0m10:39:16.777171 [info ] [MainThread]: target not specified in profile 'gp', using 'default'
+[0m10:39:16.777396 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:39:16.777536 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:39:16.777669 [info ] [MainThread]: Required dependencies:
+[0m10:39:16.778082 [debug] [MainThread]: Executing "git --help"
+[0m10:39:16.804914 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:39:16.805460 [debug] [MainThread]: STDERR: "b''"
+[0m10:39:16.805602 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:39:16.805789 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m10:39:16.805927 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m10:39:16.806057 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  The profile 'gp' does not have a target named 'default'. The valid target names for this profile are:
+   - target
+   - dev
+
+
+[0m10:39:16.806463 [debug] [MainThread]: Command `dbt debug` failed at 10:39:16.806370 after 0.06 seconds
+[0m10:39:16.806739 [debug] [MainThread]: Flushing usage events
+
+
+============================== 10:39:47.054249 | d5dd4cc1-5ec5-4e9e-9bbe-4f0018021056 ==============================
+[0m10:39:47.054249 [info ] [MainThread]: Running with dbt=1.5.11
+[0m10:39:47.057428 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/prochan_ev/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'False'}
+[0m10:39:47.057790 [info ] [MainThread]: dbt version: 1.5.11
+[0m10:39:47.057950 [info ] [MainThread]: python version: 3.12.3
+[0m10:39:47.058087 [info ] [MainThread]: python path: /Users/prochan_ev/magnit_projects/dbt_last_version/.venv/bin/python
+[0m10:39:47.058219 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit
+[0m10:39:47.058350 [info ] [MainThread]: Using profiles.yml file at /Users/prochan_ev/.dbt/profiles.yml
+[0m10:39:47.058472 [info ] [MainThread]: Using dbt_project.yml file at /Users/prochan_ev/magnit_projects/dbt_last_version/dbt_project.yml
+[0m10:39:47.058594 [info ] [MainThread]: Configuration:
+[0m10:39:48.633546 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:39:48.633832 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:39:48.633991 [info ] [MainThread]: Required dependencies:
+[0m10:39:48.634368 [debug] [MainThread]: Executing "git --help"
+[0m10:39:48.663638 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:39:48.664176 [debug] [MainThread]: STDERR: "b''"
+[0m10:39:48.664317 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:39:48.664485 [info ] [MainThread]: Connection:
+[0m10:39:48.664651 [info ] [MainThread]:   host: c-c9q8bvndjk9cmondbtq4.rw.mdb.yandexcloud.net
+[0m10:39:48.664784 [info ] [MainThread]:   port: 5432
+[0m10:39:48.664908 [info ] [MainThread]:   user: dbt
+[0m10:39:48.665027 [info ] [MainThread]:   database: dwh
+[0m10:39:48.665143 [info ] [MainThread]:   schema: dds
+[0m10:39:48.665260 [info ] [MainThread]:   search_path: None
+[0m10:39:48.665376 [info ] [MainThread]:   keepalives_idle: 0
+[0m10:39:48.665722 [info ] [MainThread]:   sslmode: None
+[0m10:39:48.666808 [info ] [MainThread]: Registered adapter: greenplum=1.5.0
+[0m10:39:48.673105 [debug] [MainThread]: Acquiring new greenplum connection 'debug'
+[0m10:39:48.674269 [debug] [MainThread]: Using greenplum connection "debug"
+[0m10:39:48.674519 [debug] [MainThread]: On debug: select 1 as id
+[0m10:39:48.674680 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:39:49.215272 [debug] [MainThread]: SQL status: SELECT 1 in 1.0 seconds
+[0m10:39:49.217672 [debug] [MainThread]: On debug: Close
+[0m10:39:49.218607 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:39:49.219060 [info ] [MainThread]: [31m1 check failed:[0m
+[0m10:39:49.219389 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m10:39:49.220291 [debug] [MainThread]: Command `dbt debug` failed at 10:39:49.220110 after 2.20 seconds
+[0m10:39:49.220723 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:39:49.221082 [debug] [MainThread]: Flushing usage events
+
+
+============================== 10:41:17.335732 | dd5152aa-1983-45f2-9568-ba7b2d5441f2 ==============================
+[0m10:41:17.335732 [info ] [MainThread]: Running with dbt=1.5.11
+[0m10:41:17.338949 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/Users/prochan_ev/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'False'}
+[0m10:41:17.340971 [debug] [MainThread]: Starter project path: /Users/prochan_ev/magnit_projects/dbt_last_version/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m10:41:22.521012 [info ] [MainThread]: 
+Your new dbt project "test_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:41:22.521491 [debug] [MainThread]: Command `dbt init` succeeded at 10:41:22.521387 after 5.21 seconds
+[0m10:41:22.521684 [debug] [MainThread]: Flushing usage events
+
+
+============================== 10:41:57.232738 | 41f3cc2d-33f2-4043-832c-e5652b513a69 ==============================
+[0m10:41:57.232738 [info ] [MainThread]: Running with dbt=1.5.11
+[0m10:41:57.235993 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/prochan_ev/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'False'}
+[0m10:41:57.236352 [info ] [MainThread]: dbt version: 1.5.11
+[0m10:41:57.236526 [info ] [MainThread]: python version: 3.12.3
+[0m10:41:57.236666 [info ] [MainThread]: python path: /Users/prochan_ev/magnit_projects/dbt_last_version/.venv/bin/python
+[0m10:41:57.236935 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit
+[0m10:41:57.237147 [info ] [MainThread]: Using profiles.yml file at /Users/prochan_ev/.dbt/profiles.yml
+[0m10:41:57.237283 [info ] [MainThread]: Using dbt_project.yml file at /Users/prochan_ev/magnit_projects/dbt_last_version/dbt_project.yml
+[0m10:41:57.237407 [info ] [MainThread]: Configuration:
+[0m10:41:57.283143 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:41:57.283457 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:41:57.283625 [info ] [MainThread]: Required dependencies:
+[0m10:41:57.284419 [debug] [MainThread]: Executing "git --help"
+[0m10:41:57.324382 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:41:57.324910 [debug] [MainThread]: STDERR: "b''"
+[0m10:41:57.325067 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:41:57.325298 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m10:41:57.325436 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m10:41:57.325573 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "default", target "dev" invalid: 'database' is a required property
+
+
+[0m10:41:57.325959 [debug] [MainThread]: Command `dbt debug` failed at 10:41:57.325861 after 0.12 seconds
+[0m10:41:57.326248 [debug] [MainThread]: Flushing usage events
