@@ -1,0 +1,30 @@
+version: 2
+sources:
+- name: manzana
+  database: dwh
+  schema: stg
+  loader: S3
+  tables:
+  - name: loyalty__crmdata__region
+    file_format: (TYPE = PARQUET)
+models:
+- name: raw_region
+  columns:
+  - name: version_id
+    description: Версия изменения. Чем выше версия - тем свежее запись
+  - name: deleted_flg
+    description: Тип изменения I - Insert U - Update D - Delete
+  - name: region_id
+    description: Идентификатор региона
+  - name: region_guid
+    description: UUID региона
+  - name: region_name
+    description: Название
+  - name: external_id
+    description: Внешний идентификатор
+  - name: type
+    description: Тип
+  - name: modified_on
+    description: Дата изменения
+  - name: dt_load
+    description: Время, когда запись была добавлена в ХД

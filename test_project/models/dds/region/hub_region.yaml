@@ -1,0 +1,15 @@
+version: 2
+models:
+- name: hub_region
+  load_start_date: null
+  columns:
+  - name: region_pk
+    description: Первичный суррогатный ключ
+  - name: region_id
+    description: Первичный натуральный ключ
+  - name: process_code
+    description: Логическая дата загрузки данных в хранилище
+  - name: load_datetime
+    description: Фактическая дата загрузки данных в хранилище
+  - name: record_source
+    description: Идентификатор системы-источника

@@ -1,0 +1,7 @@
+version: 2
+
+
+models:
+  - name: region
+    description: Витрина region
+    model_without_dag: True
